@@ -1,0 +1,11 @@
+{
+  "name": "esbuild-plugin-gas-generator",
+  "dependencies": {
+    "estree-util-visit": "^2.0.0",
+    "meriyah": "^4.5.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
+}
