@@ -2,10 +2,19 @@ import { readFile, writeFile } from "fs/promises";
 import type { Plugin } from "esbuild";
 import { generate } from "./generate";
 
+/**
+ * Options for the GasGeneratorPlugin.
+ */
 export interface GasGeneratorPluginOptions {
+  /**
+   * The target files to generate Google Apps Script code.
+   */
   targets?: string[];
 }
 
+/**
+ * Generate Google Apps Script code from ESBuild output.
+ */
 export default function GasGeneratorPlugin(
   options?: GasGeneratorPluginOptions
 ) {
@@ -25,7 +34,7 @@ export default function GasGeneratorPlugin(
           targets.map(async (t) => {
             const content = await readFile(t, { encoding: "utf-8" });
             await writeFile(t, generate(content), { encoding: "utf-8" });
-          })
+          }),
         );
       });
     },
