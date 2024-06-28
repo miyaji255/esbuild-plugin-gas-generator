@@ -1,0 +1,7 @@
+.npm
+node_modules
+test
+src
+.vscode
+tsconffig.json
+tsup.config.ts

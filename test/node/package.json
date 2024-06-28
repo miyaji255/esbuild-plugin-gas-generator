@@ -1,7 +1,11 @@
 {
     "type": "module",
     "devDependencies": {
-        "esbuild": "^0.21.5",
+        "esbuild": "^0.20.2",
+        "esbuild-plugin-gas-generator": "../../.npm/esbuild-plugin-gas-generator-0.1.0.tgz",
         "tsx": "^4.15.7"
+    },
+    "dependencies": {
+        "is-number": "^7.0.0"
     }
 }
