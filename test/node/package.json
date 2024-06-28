@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "esbuild": "^0.21.5",
+        "tsx": "^4.15.7"
+    }
+}

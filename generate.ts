@@ -19,25 +19,25 @@ export function generate(source: string): string {
           suffixDeclarations = `${suffixDeclarations}globalThis.${exported.name}=${local.name};\n`
         }
       } else {
-        switch (declaration.type) {
-          case 'FunctionDeclaration':
-            prefixDeclarations = `${prefixDeclarations}function ${declaration.id!.name}(){}\n`
-            suffixDeclarations = `${suffixDeclarations}globalThis.${declaration.id!.name}=${declaration.id!.name};\n`
-            console.log(source.slice(declaration.start, declaration.id!.start! - 1))
-            remove.push([declaration.start!, declaration.id!.start! - 1])
-            break;
-          case 'VariableDeclaration':
-          // for (const d of declaration.declarations) {
-          //   if(d.type)
-          //   prefixDeclarations = `${prefixDeclarations}function ${d.id!.name}(){}\n`
-          //   suffixDeclarations = `${suffixDeclarations}globalThis.${d.id!.name}=${declaration.id!.name};\n`
-          //   remove.push([declaration.start!, d.id!.start! - 1])
-          // }
-          // break;
-          case 'ClassDeclaration':
-          case 'ClassExpression':
-            break;
-        }
+        // switch (declaration.type) {
+        //   case 'FunctionDeclaration':
+        //     prefixDeclarations = `${prefixDeclarations}function ${declaration.id!.name}(){}\n`
+        //     suffixDeclarations = `${suffixDeclarations}globalThis.${declaration.id!.name}=${declaration.id!.name};\n`
+        //     console.log(source.slice(declaration.start, declaration.id!.start! - 1))
+        //     remove.push([declaration.start!, declaration.id!.start! - 1])
+        //     break;
+        //   case 'VariableDeclaration':
+        //   // for (const d of declaration.declarations) {
+        //   //   if(d.type)
+        //   //   prefixDeclarations = `${prefixDeclarations}function ${d.id!.name}(){}\n`
+        //   //   suffixDeclarations = `${suffixDeclarations}globalThis.${d.id!.name}=${declaration.id!.name};\n`
+        //   //   remove.push([declaration.start!, d.id!.start! - 1])
+        //   // }
+        //   // break;
+        //   case 'ClassDeclaration':
+        //   case 'ClassExpression':
+        //     break;
+        // }
       }
     }
   }
@@ -52,9 +52,9 @@ export function generate(source: string): string {
 
 
   // console.log(JSON.stringify(parsed, undefined, 2))
-  console.log(result)
+  // console.log(result)
 
-  return ""
+  return result
 }
 
 generate(`// src/example-module.ts
