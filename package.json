@@ -3,7 +3,8 @@
   "type": "module",
   "version": "0.1.2",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "test": "vitest --run"
   },
   "main": "./dist/index.js",
   "exports": {
@@ -26,13 +27,15 @@
     "esbuild": ">=0.17.0"
   },
   "dependencies": {
-    "@types/node": "^20.14.9",
-    "estree-util-visit": "^2.0.0",
     "meriyah": "^4.5.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "esbuild": "^0.21.5",
+    "is-number": "^7.0.0",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2"
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
   }
 }

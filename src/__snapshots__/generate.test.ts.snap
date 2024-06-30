@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`generate 1 1`] = `
+"function baz(){}
+function bar(){}
+(()=>{
+const foo = 1;
+function bar() {}
+
+globalThis.baz=foo;
+globalThis.bar=bar;
+})()"
+`;

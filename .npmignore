@@ -3,5 +3,6 @@ node_modules
 test
 src
 .vscode
-tsconffig.json
+tsconfig.json
 tsup.config.ts
+vitest.config.ts
