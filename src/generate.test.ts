@@ -7,5 +7,14 @@ function bar() {}
 export { foo as baz, bar };
 `;
   const result = generate(source);
-  expect(result).toMatchSnapshot();
+  expect(result).toBe(`function baz(){}
+function bar(){}
+(()=>{
+const foo = 1;
+function bar() {}
+
+globalThis.baz=foo;
+globalThis.bar=bar;
+})()
+`);
 });

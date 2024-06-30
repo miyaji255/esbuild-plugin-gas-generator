@@ -28,7 +28,7 @@ export function generate(source: string): string {
     result += source.slice(lastEnd + 1, start)
     lastEnd = end;
   }
-  result = `${prefixDeclarations}(()=>{\n${result}${source.slice(lastEnd + 1)}\n${suffixDeclarations}})()`
+  result = `${prefixDeclarations}(()=>{\n${result}${source.slice(lastEnd + 1)}\n${suffixDeclarations}})()\n`
 
   return result
 }
