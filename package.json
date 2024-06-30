@@ -1,7 +1,8 @@
 {
   "name": "esbuild-plugin-gas-generator",
+  "description": "This plugin allows you to execute functions exported within Google Apps Script (GAS) environment.",
   "type": "module",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "scripts": {
     "build": "tsup",
     "test": "vitest --run"
@@ -23,6 +24,18 @@
       }
     }
   },
+  "author": "miyaji255 <84168445+miyaji255@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyaji255/esbuild-plugin-gas-generator.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "google-apps-script",
+    "gas"
+  ],
   "peerDependencies": {
     "esbuild": ">=0.17.0"
   },
