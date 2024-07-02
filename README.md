@@ -1,5 +1,7 @@
 # esbuild-plugin-gas-generator
 
+[![npm version](https://badge.fury.io/js/esbuild-plugin-gas-generator.svg)](https://badge.fury.io/js/esbuild-plugin-gas-generator)
+
 This plugin allows you to execute functions exported within Google Apps Script (GAS) environment.
 
 ## Installation
