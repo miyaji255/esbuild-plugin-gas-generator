@@ -3,6 +3,7 @@ import { parseModule } from "meriyah";
 export function generate(source: string): string {
   const parsed = parseModule(source, {
     ranges: true,
+    next: true,
   })
 
   const remove: [number, number][] = []
