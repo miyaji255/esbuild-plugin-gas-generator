@@ -43,12 +43,20 @@
     "meriyah": "^4.5.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
-    "esbuild": "^0.21.5",
+    "@types/node": "^20.14.11",
+    "esbuild": "^0.23.0",
+    "esbuild-17": "npm:esbuild@^0.17.19",
+    "esbuild-18": "npm:esbuild@^0.18.20",
+    "esbuild-19": "npm:esbuild@^0.19.12",
+    "esbuild-20": "npm:esbuild@^0.20.2",
+    "esbuild-21": "npm:esbuild@^0.21.5",
+    "esbuild-22": "npm:esbuild@^0.22.0",
+    "esbuild-23": "npm:esbuild@^0.23.0",
     "is-number": "^7.0.0",
-    "tsup": "^8.1.0",
-    "tsx": "^4.16.0",
-    "typescript": "^5.5.2",
-    "vitest": "^1.6.0"
+    "tsup": "^8.2.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^1.6.0",
+    "zod": "^3.23.8"
   }
 }
