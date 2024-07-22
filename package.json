@@ -52,7 +52,6 @@
     "esbuild-21": "npm:esbuild@^0.21.5",
     "esbuild-22": "npm:esbuild@^0.22.0",
     "esbuild-23": "npm:esbuild@^0.23.0",
-    "is-number": "^7.0.0",
     "tsup": "^8.2.2",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3",

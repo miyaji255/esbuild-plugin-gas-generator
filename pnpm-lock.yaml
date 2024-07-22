@@ -39,9 +39,6 @@ importers:
       esbuild-23:
         specifier: npm:esbuild@^0.23.0
         version: esbuild@0.23.0
-      is-number:
-        specifier: ^7.0.0
-        version: 7.0.0
       tsup:
         specifier: ^8.2.2
         version: 8.2.2(postcss@8.4.39)(tsx@4.16.2)(typescript@5.5.3)(yaml@2.4.5)
