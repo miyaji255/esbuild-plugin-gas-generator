@@ -16,7 +16,7 @@ export interface GasGeneratorPluginOptions {
  * Generate Google Apps Script code from ESBuild output.
  */
 export default function GasGeneratorPlugin(
-  options?: GasGeneratorPluginOptions
+  options?: GasGeneratorPluginOptions,
 ) {
   return {
     name: "esbuild-plugin-gas-generator",

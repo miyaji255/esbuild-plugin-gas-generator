@@ -5,7 +5,8 @@
   "version": "1.1.0",
   "scripts": {
     "build": "tsup",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "fmt": "prettier --write ."
   },
   "main": "./dist/index.js",
   "exports": {
@@ -43,7 +44,7 @@
     "meriyah": "^4.5.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11",
+    "@types/node": "^20.14.12",
     "esbuild": "^0.23.0",
     "esbuild-17": "npm:esbuild@^0.17.19",
     "esbuild-18": "npm:esbuild@^0.18.20",
@@ -52,9 +53,10 @@
     "esbuild-21": "npm:esbuild@^0.21.5",
     "esbuild-22": "npm:esbuild@^0.22.0",
     "esbuild-23": "npm:esbuild@^0.23.0",
+    "prettier": "^3.3.3",
     "tsup": "^8.2.2",
     "tsx": "^4.16.2",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "vitest": "^1.6.0",
     "zod": "^3.23.8"
   }
