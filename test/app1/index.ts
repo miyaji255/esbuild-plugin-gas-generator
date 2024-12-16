@@ -1,4 +1,5 @@
-import z from "zod";
+import * as z from "zod";
+export * from "./sub";
 
 const schema = z.object({
   name: z.string(),

@@ -5,6 +5,7 @@
   "version": "1.1.0",
   "scripts": {
     "build": "tsup",
+    "generate-dts": "node ./scripts/generate-appsscript-dts.mjs",
     "test": "vitest --run",
     "fmt": "prettier --write ."
   },
@@ -40,7 +41,6 @@
   "peerDependencies": {
     "esbuild": ">=0.17.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.14.12",
     "esbuild": "^0.23.0",
@@ -52,6 +52,7 @@
     "esbuild-22": "npm:esbuild@^0.22.0",
     "esbuild-23": "npm:esbuild@^0.23.0",
     "esbuild-24": "npm:esbuild@^0.24.0",
+    "json-schema-to-typescript": "^15.0.3",
     "prettier": "^3.3.3",
     "tsup": "^8.2.2",
     "tsx": "^4.16.2",
