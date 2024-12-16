@@ -16,6 +16,9 @@ export interface GasGeneratorPluginOptions {
    */
   excludePlugins?: string[];
 
+  /**
+   * The path to the `appsscript.json` file or an object with the options directly.
+   */
   appsscript: string | JSONSchemaForGoogleAppsScriptManifestFiles;
 }
 

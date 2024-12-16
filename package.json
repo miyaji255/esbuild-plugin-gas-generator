@@ -13,16 +13,30 @@
   "exports": {
     ".": {
       "require": {
-        "default": "./dist/index.cjs",
-        "types": "./dist/index.d.cts"
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       },
       "import": {
-        "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       },
       "default": {
-        "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./appsscript": {
+      "require": {
+        "types": "./dist/AppsScript.d.d.cts",
+        "default": "./dist/AppsScript.d.cjs"
+      },
+      "import": {
+        "types": "./dist/AppsScript.d.d.ts",
+        "default": "./dist/AppsScript.d.js"
+      },
+      "default": {
+        "types": "./dist/AppsScript.d.d.ts",
+        "default": "./dist/AppsScript.d.js"
       }
     }
   },
