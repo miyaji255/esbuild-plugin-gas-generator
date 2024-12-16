@@ -13,26 +13,28 @@ describe("app1", () => {
     "esbuild-21",
     "esbuild-22",
     "esbuild-23",
+    "esbuild-24",
   ] as const)(`%s`, async (packageName) => {
-    const esbuild = await import(packageName);
+    const esbuild = (await import(packageName)) as typeof import("esbuild");
     const outfile = path.resolve(
       __dirname,
-      `../test/app1/dist/${packageName}/index.js`,
+      `../test/app1/dist/${packageName}/index.js`
     );
 
     await esbuild.build({
       entryPoints: [path.resolve(__dirname, "../test/app1/index.ts")],
       bundle: true,
       outfile,
-      format: "esm",
-      plugins: [GasGeneratorPlugin()],
+      format: "iife",
+      plugins: [GasGeneratorPlugin({})],
     });
 
     const output = await readFile(outfile, { encoding: "utf-8" });
     expect(output).toMatchSnapshot();
-    expect(output).toMatch(/^function validateUser\(\){}\n\(\(\)=>{\n/);
+    expect(output).toMatch(/^function validateUser\(\){.*?}/);
     eval(output);
     const validateUser = (globalThis as any).validateUser;
+    delete (globalThis as any).validateUser;
 
     const date = new Date("1990-01-01");
     expect(
@@ -41,7 +43,7 @@ describe("app1", () => {
         name: "John Doe",
         age: 30,
         birthday: date,
-      }),
+      })
     ).toStrictEqual({
       name: "John Doe",
       age: 30,
@@ -52,7 +54,7 @@ describe("app1", () => {
       validateUser({
         name: "John Doe",
         age: 30,
-      }),
+      })
     ).toThrowError(
       new ZodError([
         {
@@ -62,7 +64,7 @@ describe("app1", () => {
           path: ["birthday"],
           message: "Required",
         },
-      ]),
+      ])
     );
   });
 });

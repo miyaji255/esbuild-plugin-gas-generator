@@ -40,9 +40,7 @@
   "peerDependencies": {
     "esbuild": ">=0.17.0"
   },
-  "dependencies": {
-    "meriyah": "^4.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.14.12",
     "esbuild": "^0.23.0",
@@ -53,11 +51,13 @@
     "esbuild-21": "npm:esbuild@^0.21.5",
     "esbuild-22": "npm:esbuild@^0.22.0",
     "esbuild-23": "npm:esbuild@^0.23.0",
+    "esbuild-24": "npm:esbuild@^0.24.0",
     "prettier": "^3.3.3",
     "tsup": "^8.2.2",
     "tsx": "^4.16.2",
     "typescript": "^5.5.4",
     "vitest": "^1.6.0",
     "zod": "^3.23.8"
-  }
+  },
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf"
 }

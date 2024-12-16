@@ -2,14 +2,14 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ES2020",
+    "lib": ["ES2020"],
     "moduleResolution": "Bundler",
     "outDir": "dist",
 
     "isolatedModules": true,
     "strict": true,
     "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": true,
+    "allowUnusedLabels": false, 
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
