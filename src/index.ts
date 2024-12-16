@@ -86,7 +86,7 @@ export default function GasGeneratorPlugin(options: GasGeneratorPluginOptions) {
           (async () => {
             const content =
               typeof normalizedOptions.appsscript === "string"
-                ? normalizedOptions.appsscript
+                ? await readFile(normalizedOptions.appsscript, { encoding: "utf-8" })
                 : JSON.stringify(normalizedOptions.appsscript);
             const hash = simpleHash(content);
             if (lastHash === hash) return;
