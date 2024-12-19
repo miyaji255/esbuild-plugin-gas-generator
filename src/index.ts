@@ -61,6 +61,7 @@ export default function GasGeneratorPlugin(options: GasGeneratorPluginOptions) {
           globalName: undefined,
           metafile: true,
           format: "esm",
+          logLevel: "silent",
           bundle: true,
           minify: false,
           sourcemap: false,
