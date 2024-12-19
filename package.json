@@ -2,7 +2,7 @@
   "name": "esbuild-plugin-gas-generator",
   "description": "This plugin allows you to execute functions exported within Google Apps Script (GAS) environment.",
   "type": "module",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "scripts": {
     "build": "tsup",
     "generate-dts": "node ./scripts/generate-appsscript-dts.mjs",
